@@ -33,6 +33,11 @@ body {
   width: auto;
 }
 
+.navbar-header img{
+  float: left;
+  padding: 10px;
+}
+
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
