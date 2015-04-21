@@ -395,19 +395,11 @@ module.exports = function (grunt) {
       return grunt.task.run(['build', 'connect:dist:keepalive']);
     }
 
-    // grunt.task.run([
-    //   'clean:server',
-    //   'wiredep',
-    //   'concurrent:server',
-    //   'autoprefixer:server',
-    //   'connect:livereload',
-    //   'watch'
-    // ]);
     grunt.task.run([
       'clean:server',
-      'bower-install',
+      'wiredep',
       'concurrent:server',
-      'autoprefixer',
+      'autoprefixer:server',
       'connect:livereload',
       'watch'
     ]);
