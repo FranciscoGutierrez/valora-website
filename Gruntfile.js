@@ -375,10 +375,9 @@ module.exports = function (grunt) {
         'copy:styles'
       ],
       dist: [
-        'copy:styles'
-        // 'copy:styles',
-        // 'imagemin',
-        // 'svgmin'
+        'copy:styles',
+        'imagemin',
+        'svgmin'
       ]
     },
 
@@ -427,13 +426,11 @@ module.exports = function (grunt) {
     'useminPrepare',
     'concurrent:dist',
     'autoprefixer',
-    'concat',
     'ngAnnotate',
     'copy:dist',
     'copy:styles',
     'cdnify',
     'cssmin',
-    'uglify',
     'filerev',
     'usemin',
     'htmlmin'
